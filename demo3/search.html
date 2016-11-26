@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>搜索</title>
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = 100 * (document.documentElement.clientWidth/640) + "px";
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+	<div id="search1">
+		<header class="search">
+			<input type="text" placeholder="寻找商品" class="search_text">
+			<img src="img/ic_search.png" alt="" class="search_img">
+		</header>
+		<artical class="contant">
+			<ul class="cont clear"></ul>
+		</artical>
+	</div>
+	<div id="search2">
+		<header class="search">
+			<input type="text" placeholder="寻找商品" class="search_text">
+			<img src="img/ic_search.png" alt="" class="search_img">
+			<span class="search_span">搜索</span>
+		</header>
+		<artical class="content_search">
+			<div class="deserve_search">值得搜</div>
+			<ul class="deserve_search_list clear"></ul>
+			<div class="search_history">
+				<div class="deserve_search">搜索历史</div>
+				<ul class="search_history_list"></ul>
+				<button>清除搜索历史</button>
+			</div>
+		</artical>
+	</div>
+	
+	<script type="text/javascript" src="js/zepto_1.1.3.js"></script>
+	<script type="text/javascript" src="js/event.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/touch.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+	"bannerImg":["banner1.png","banner2.png","banner3.png","banner4.png"],
+	"goodsList":[
+		{
+			"goodsImg":"list1.png",
+			"goodsName":"2016夏装新款女装韩版大码雪纺裙子中长款女士短袖蕾丝连衣裙上衣",
+			"price":"95.00",
+			"discount":"7.60",
+			"sold":"41",
+			"bannerImg":["banner1.png","banner2.png","banner3.png"],
+			"goodsID":"01"
+	},
+		{
+			"goodsImg":"list2.png",
+			"goodsName":"朵朵雪小西装女外套2016秋装新款长袖韩版修身女士短款休闲西服女",
+			"price":"139.00",
+			"discount":"5.21",
+			"sold":"30",
+			"bannerImg":["banner4.png","banner5.png","banner6.png"],
+			"goodsID":"02"
+	},
+		{
+			"goodsImg":"list3.png",
+			"goodsName":"大码女装秋冬新款加肥加大蕾丝拼接下摆毛衣中长款长袖针",
+			"price":"40.00",
+			"discount":"1.19",
+			"sold":"516",
+			"goodsID":"03"
+	},
+		{
+			"goodsImg":"list4.png",
+			"goodsName":"2016春秋新款女装韩版文艺大码条纹衬衫女韩范宽松打底衬",
+			"price":"35.00",
+			"discount":"5.15",
+			"sold":"9",
+			"goodsID":"04"
+		},
+		{
+			"goodsImg":"list5.png",
+			"goodsName":"秋衣女外穿长袖女士t恤韩版中长款蕾丝打底衫2016春秋季女",
+			"price":"48.00",
+			"discount":"1.91",
+			"sold":"145",
+			"goodsID":"05"
+			
+		},
+		{
+			"goodsImg":"list6.png",
+			"goodsName":"不锈钢餐具刀叉三件套 原价28元 秒杀价8元多数地区包邮",
+			"price":"8.00",
+			"discount":"2.90",
+			"sold":"3",
+			"goodsID":"06"
+			
+		},
+		{
+			"goodsImg":"list7.png",
+			"goodsName":"2016韩版女士职业工装OL长袖衬衫女装春秋装白色打底衫女",
+			"price":"15.90",
+			"discount":"3.24",
+			"sold":"93"	,
+			"goodsID":"07"
+		},
+		{
+			"goodsImg":"list8.png",
+			"goodsName":"秋季女装2016新款白色长袖t恤女中长款宽松上衣打底衫秋衣",
+			"price":"29.90",
+			"discount":"7.67",
+			"sold":"81",
+			"goodsID":"08"
+		}
+	]
+}

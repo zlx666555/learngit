@@ -1,0 +1,480 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+}
+header {
+    background: #fe4481;
+    width: 100%;
+    height: 0.85rem;
+    font-size: 0.3rem;
+    color: #fff;
+    line-height: 0.85rem;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    .btn {
+        position: absolute;
+    }
+    .btn-left {
+        left: 0.25rem;
+        color: #fff;
+        font-size: 0.34rem;
+        font-weight: 100;
+    }
+}
+#wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0.85rem;
+    bottom: -0.2rem;
+    background: #f6f6f6;
+    #iscroll {
+        width: 100%;
+        height: auto;
+        #pullDown {
+            width: 100%;
+            height: 0.5rem;
+            margin-top: -0.5rem;
+            text-align: center;
+            line-height: 0.5rem;
+            color: #7D838C;
+            position: relative;
+            span.iconfont {
+                position: absolute;
+                color: #fe4481;
+                font-size: 0.4rem;
+                left: 32%;
+                top: 5%;
+            }
+        }
+        #content {
+            width: 100%;
+            .swiper-container {
+                width: 100%;
+                height: 2.2rem;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border: 0;
+                    display: block;
+                }
+                #pagination {
+                    left: 70%;
+                    width: 30%;
+                    span {
+                        width: 6px;
+                        height: 6px;
+                    }
+                }
+            }
+            .selectBar {
+                width: 100%;
+                height: 1.42rem;
+                background: #fff;
+                display: flex;
+                a {
+                    height: 100%;
+                    flex: 1;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    text-decoration: none;
+                    div {
+                        width: 0.72rem;
+                        height: 0.72rem;
+                        border-radius: 100%;
+                        span.iconfont {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 0.4rem;
+                            line-height: 0.75rem;
+                            color: #fff;
+                        }
+                    }
+                    p {
+                        color: #7f7f7f;
+                        margin-top: 0.13rem;
+                        font-size: 0.2rem;
+                    }
+                }
+            }
+            .updata {
+                width: 100%;
+                height: 3.56rem;
+                background: #fff;
+                margin-top: 0.13rem;
+                clear: both;
+                .box-left {
+                    height: 100%;
+                    width: 2.6rem;
+                    float: left;
+                    position: relative;
+                    background: url("../img/updata.png") no-repeat left bottom;
+                    background-size: 100%;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 1px;
+                        height: 100%;
+                        background: #f1f1f1;
+                        right: 1%;
+                        top: 0;
+                    }
+                    h2 {
+                        font-size: 0.23rem;
+                        color: #ff5516;
+                        font-weight: 100;
+                        height: 0.23rem;
+                        padding-left: 0.42rem;
+                        margin-top: 0.18rem;
+                    }
+                    p {
+                        font-size: 0.18rem;
+                        color: #9a9a9a;
+                        padding-left: 0.42rem;
+                        margin-top: 0.1rem;
+                    }
+                }
+                .box-right {
+                    height: 100%;
+                    position: relative;
+                    width: 3.8rem;
+                    float: left;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 1px;
+                        background: #e5e5e5;
+                        left: 49%;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 3.84rem;
+                        height: 1px;
+                        background: #e5e5e5;
+                        top: 49%;
+                        right: 0;
+                    }
+                    ul {
+                        height: 100%;
+                        li {
+                            width: 1.9rem;
+                            height: 1.77rem;
+                            float: left;
+                            a {
+                                width: 100%;
+                                height: 1.6rem;
+                                display: block;
+                                padding-top: 0.17rem;
+                                text-decoration: none;
+                                h2 {
+                                    font-size: 0.23rem;
+                                    color: #ff5516;
+                                    font-weight: 100;
+                                    height: 0.23rem;
+                                    padding-left: 0.26rem; //                              margin-top: 0.17rem;
+                                }
+                                p {
+                                    font-size: 0.18rem;
+                                    color: #9a9a9a;
+                                    padding-left: 0.26rem;
+                                    margin-top: 0.1rem;
+                                }
+                            }
+                        }
+                        li:nth-child(1) {
+                            background: url("../img/updata1.png") no-repeat left bottom;
+                            background-size: 100%;
+                        }
+                        li:nth-child(2) {
+                            background: url("../img/updata2.png") no-repeat left bottom;
+                            background-size: 100%;
+                        }
+                        li:nth-child(3) {
+                            background: url("../img/updata3.png") no-repeat left bottom;
+                            background-size: 100%;
+                        }
+                        li:nth-child(4) {
+                            background: url("../img/updata4.png") no-repeat left bottom;
+                            background-size: 100%;
+                        }
+                    }
+                }
+            }
+            .goodsList {
+                width: 100%;
+                margin-top: 0.15rem;
+                background: #fff; //              padding-bottom: 0.9rem;
+                &.state1 {
+                    ul {
+                        overflow: hidden;
+                        li {
+                            width: 50%;
+                            display: block;
+                            float: left;
+                            a {
+                                display: block;
+                                padding-top: 0.1rem;
+                                padding-left: 0.08rem;
+                                padding-right: 0.08rem;
+                                text-decoration: none;
+                                .img-box {
+                                    //                                 width: 3.03rem;
+                                    height: 3.33rem;
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .goodname {
+                                    width: 90%;
+                                    height: 0.48rem;
+                                    line-height: 0.48rem;
+                                    font-size: 0.25rem;
+                                    color: #5b5b5b;
+                                    padding-left: 0.08rem;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                .price {
+                                    //                                 width: 100%;
+                                    height: 0.37rem;
+                                    line-height: 0.37rem;
+                                    font-size: 0.18rem;
+                                    color: #de1d1b;
+                                    clear: both;
+                                    padding-left: 0.12rem;
+                                    span {
+                                        font-size: 0.23rem;
+                                        margin-right: 0.17rem;
+                                    }
+                                    del,
+                                    i {
+                                        color: #bebebe;
+                                        font-size: 0.18rem;
+                                        font-style: normal;
+                                    }
+                                    i {
+                                        float: right;
+                                        b {
+                                            font-weight: normal;
+                                            color: #BEBEBE;
+                                            font-size: 0.18rem;
+                                        }
+                                    }
+                                }
+                                .sale {
+                                    height: 0.4rem;
+                                    padding-left: 0.09rem;
+                                    line-height: 0.4rem;
+                                    clear: both;
+                                    span {
+                                        color: #bebebe;
+                                        font-size: 0.21rem;
+                                        i {
+                                            font-style: normal;
+                                        }
+                                    }
+                                    b {
+                                        color: #bebebe;
+                                        font-size: 0.21rem;
+                                        float: right;
+                                        font-weight: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.state2 {
+                    ul {
+                        overflow: hidden;
+                        li {
+                            width: 100%;
+                            border-bottom: 1px solid #e3e3e3;
+                            box-sizing: border-box;
+                            a {
+                                display: block;
+                                padding-left: 0.3rem;
+                                padding-top: 0.18rem;
+                                padding-bottom: 0.18rem;
+                                text-decoration: none;
+                                overflow: hidden;
+                                .img-box {
+                                    width: 2.2rem;
+                                    height: 1.75rem;
+                                    float: left;
+                                    overflow: hidden;
+                                    img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                                .text {
+                                    float: left;
+                                    padding-left: 0.24rem;
+                                    padding-right: 0.2rem;
+                                    width: 3.45rem;
+                                    .goodname {
+                                        color: #2c2c2c;
+                                        width: 100%;
+                                    }
+                                    .price {
+                                        height: 0.57rem;
+                                        line-height: 0.57rem;
+                                        width: 100%;
+                                        color: #e23937;
+                                        font-size: 0.2rem;
+                                        position: relative;
+                                        span {
+                                            color: #e23937;
+                                            margin-right: 0.2rem;
+                                        }
+                                        del {
+                                            font-size: 0.16rem;
+                                            color: #a7a7a7;
+                                        }
+                                        i {
+                                            b {
+                                                font-weight: normal;
+                                            }
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: -122%;
+                                            color: #bcbcbc;
+                                            font-style: normal;
+                                        }
+                                    }
+                                    .sale {
+                                        width: 100%;
+                                        height: 0.36rem;
+                                        line-height: 0.36rem;
+                                        margin-top: 0.24rem;
+                                        span {
+                                            color: #afafaf;
+                                            overflow: hidden;
+                                            margin-left: 1.2rem;
+                                            i {
+                                                font-style: normal;
+                                            }
+                                        }
+                                        b {
+                                            float: right;
+                                            color: #bcbcbc;
+                                            font-weight: normal;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #pullUp {
+            width: 100%;
+            height: 0.55rem;
+            text-align: center;
+            line-height: 0.55rem;
+            color: #7D838C;
+            position: relative;
+            span.iconfont {
+                position: absolute;
+                left: 32%;
+                top: 5%;
+                font-size: 0.4rem;
+            }
+        }
+    }
+}
+footer {
+    width: 100%;
+    height: 0.9rem;
+    background: #f6f6f6;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    .footerList {
+        height: 100%;
+        display: flex;
+        a {
+            height: 100%;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            &.active {
+                span.iconfont {
+                    color: #fe4280;
+                }
+                p {
+                    color: #fe4280;
+                }
+            }
+            span.iconfont {
+                color: #3f4855;
+                font-size: 0.39rem;
+                font-style: normal;
+                margin-top: 0.05rem;
+            }
+            p {
+                font-size: 0.19rem;
+                color: #7d838c;
+            }
+        }
+    }
+}
+.fixedBar {
+    position: fixed;
+    right: 0.25rem;
+    bottom: 2rem;
+    display: none;
+    .change,
+    .backTop {
+        width: 0.64rem;
+        height: 0.64rem;
+        border: 1px solid #919caa;
+        border-radius: 100%;
+        background: rgba(255,255,255,0.6);
+    }
+    .change {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.28rem;
+        color: #919caa;
+    }
+    .backTop {
+        margin-top: 0.16rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #919caa;
+        p {
+            font-size: 0.07rem;
+        }
+        span.iconfont {
+            font-size: 0.26rem;
+        }
+    }
+}

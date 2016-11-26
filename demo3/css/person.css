@@ -1,0 +1,169 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  background: #f6f6f6;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  overflow: hidden;
+  background: #f6f6f6;
+}
+header {
+  background: #fe4481;
+  width: 100%;
+  height: 1.523rem;
+  text-align: center;
+  padding: 1.0rem 2.3rem 0rem 2.3rem;
+}
+header div a {
+  border-radius: 0.12rem;
+  width: 1.84rem;
+  height: 0.42rem;
+  background: #ffdae6;
+  text-align: center;
+  color: #fe4481;
+  font-size: 0.29rem;
+  padding-top: 0.2rem;
+  display: block;
+  text-decoration: none;
+}
+header p a {
+	display: block;
+  color: #ffffff;
+  border: 1px solid #FFFFFF;
+  border-radius: 0.39rem;
+  width: 0.96rem;
+  height: 0.40rem;
+  margin-left: .4rem;
+  text-align: center;
+  margin-top: 0.13rem;
+  padding-top: 0.14rem;
+}
+article {
+  background: #f6f6f6;
+  width: 100%;
+  height: 8.52rem;
+}
+article .taobao {
+  width: 100%;
+  height: 4.2rem;
+  padding: 0rem 0.3rem 0.3rem 0.3rem;
+  background: #FFFFFF;
+}
+article .taobao li {
+  padding: 0rem 0rem 0.1rem 0rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  border-bottom: 1px solid #dfdfdf;
+  width: 5.7rem;
+}
+article .taobao li img {
+  width: 0.67rem;
+  height: 0.67rem;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 0.29rem;
+  color: #FFFFFF;
+  border-radius: 0.14rem;
+  margin-top: 0.1rem;
+}
+article .taobao li p {
+  padding-left: 0.42rem;
+  float: left;
+  width: 4.0rem;
+  height: 0.5rem;
+  color: #333333;
+  font-size: 0.24rem;
+
+}
+article .taobao li .right {
+  color: #DFDFDF;
+  text-align: center;
+  font-size: 0.16rem;
+  position: absolute;
+  margin-left: 0.39rem;
+}
+article .last {
+  width: 100%;
+  height: 3.4rem;
+  padding: 0rem 0.3rem 0.3rem 0.3rem;
+  margin-top: 0.6rem;
+  background: #FFFFFF;
+}
+article .last li {
+  padding: 0rem 0rem 0.1rem 0rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  width: 5.7rem;
+  position: relative;
+  border-bottom: 1px solid #dfdfdf;
+}
+article .last li img {
+  width: 0.67rem;
+  height: 0.67rem;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 0.29rem;
+  color: #FFFFFF;
+  border-radius: 0.14rem;
+  margin-top: 0.1rem;
+}
+article .last li p {
+  padding-left: 0.42rem;
+  float: left;
+  width: 4.0rem;
+  height: 0.5rem;
+  color: #333333;
+  font-size: 0.24rem;
+}
+article .last li .right {
+  color: #DFDFDF;
+  text-align: center;
+  font-size: 0.16rem;
+  margin-left: 0.39rem;
+  position: absolute;
+}
+/*# sourceMappingURL=person.css.map */
+footer {
+  width: 100%;
+  height: 0.9rem;
+  background: #f6f6f6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+footer .footerList {
+  height: 100%;
+  display: flex;
+}
+footer .footerList a {
+  height: 100%;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+footer .footerList a.active span.iconfont {
+  color: #fe4280;
+}
+footer .footerList a.active p {
+  color: #fe4280;
+}
+footer .footerList a span.iconfont {
+  color: #3f4855;
+  font-size: 0.39rem;
+  font-style: normal;
+  margin-top: 0.05rem;
+}
+footer .footerList a p {
+  font-size: 0.19rem;
+  color: #7d838c;
+}

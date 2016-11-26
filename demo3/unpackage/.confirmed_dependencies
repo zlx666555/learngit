@@ -1,0 +1,30 @@
+{
+	"index.html": {
+		"resources": [
+			"img/banner2.png",
+			"img/banner3.png",
+			"js/swiper.min.js",
+			"img/banner4.png",
+			"img/updata2.png",
+			"css/index.css",
+			"js/iscroll-probe.js",
+			"json/index.json",
+			"js/zepto_1.1.3.js",
+			"img/updata1.png",
+			"img/list.png",
+			"img/banner1.png",
+			"img/updata4.png",
+			"css/swiper.min.css",
+			"img/updata3.png",
+			"img/updata.png",
+			"css/reset.css",
+			"js/index.js",
+			"img/list5.png",
+			"img/list4.png",
+			"img/list3.png",
+			"img/list2.png",
+			"img/list6.png",
+			"img/list1.png"
+		]
+	}
+}

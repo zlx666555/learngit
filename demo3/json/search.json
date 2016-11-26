@@ -1,0 +1,28 @@
+{"search":[
+	{"id":"0","img":"img/fushi.png","name":"女装"},
+	{"id":"1","img":"img/nanzhuang.png","name":"男装"},
+	{"id":"2","img":"img/jujia.png","name":"居家"},
+	{"id":"3","img":"img/muying.png","name":"母婴"},
+	{"id":"4","img":"img/xiebao.png","name":"鞋包"},
+	{"id":"5","img":"img/neiyi.png","name":"内衣"},
+	{"id":"6","img":"img/meishi.png","name":"美食"},
+	{"id":"7","img":"img/shuma.png","name":"数码"},
+	{"id":"8","img":"img/huazhuangpin.png","name":"美妆个护"},
+	{"id":"9","img":"img/wenti.png","name":"文体"},
+	{"id":"10","img":"img/oldman.png","name":"中老年"},
+	{"id":"11","img":"img/peishi.png","name":"配饰"},
+	{"id":"12","img":"img/jkj.png","name":"十元包邮"},
+	{"id":"13","img":"img/newsort.png","name":"今日更新"},
+	{"id":"14","img":"img/all.png","name":"全部"}
+],"deserve_search":[
+	{"id":"15","search_name":"秋装上新季","deserveBuy":"超值精选"},
+	{"id":"16","search_name":"省钱大作战","deserveBuy":"超值精选"},
+	{"id":"17","search_name":"连衣裙"},
+	{"id":"18","search_name":"女鞋"},
+	{"id":"19","search_name":"T恤女"},
+	{"id":"20","search_name":"外套"},
+	{"id":"21","search_name":"男鞋"},
+	{"id":"22","search_name":"T恤男"},
+	{"id":"23","search_name":"拖鞋"},
+	{"id":"24","search_name":"衬衫女"}
+]}

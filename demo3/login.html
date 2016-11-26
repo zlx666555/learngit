@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_ik8borem3d079zfr.css"/>
+		<script src="js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/touch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/modernizr.custom.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="js/zepto.custom.js" type="text/javascript" charset="utf-8"></script>
+	 <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/hideShowPassword.js"></script></head>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<a id="return" class="iconfont icon-icon" href="person.html"></a><h2 class="header-title">登录</h2>
+				<a href="register.html" class="register"><h2>注册</h2></a>
+			</div>
+			<div class="main">
+				<ul class="user-info">
+					<span class="h1"></span><span class="word">十元包邮账号登录</span><span class="h2"></span>
+					<li class="username font1"><input type="input" class="ipt" placeholder="请输入账户"/></li>
+					<li class="password font1"><input type="password" id="password-3"  class="passwords" placeholder="请输入密码"/></li>
+					<li class="checkBox">
+						<input type="checkbox" class="seepassword" id="show-password"/><span>显示密码</span>
+						<a href="###">忘记密码？</a>
+					</li>
+					<li class="checkBox">
+						<input type="checkbox"/><span>记住密码自动登录</span>
+					</li>
+					<li class="login font2" id="login"><input type="button" value="登录"/></li>
+					<!--<a href="register.html"><li class="register font2" id="register"><input type="button" value="注册"/></li></a>-->
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	
+<script>
+  $('#show-password').on('change', function () {
+  		$('#password-3').hideShowPassword($(this).prop('checked'));
+	});
+</script>
+</html>

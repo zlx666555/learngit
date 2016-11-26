@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="css/login.css"/>-->
+   		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_ok812qgo4jmdkj4i.css"/>
+		<script src="js/zepto_1.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/touch.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<a href="person.html"><span id="return" class="iconfont icon-xiaoyu"></a></span><h2 class="header-title">注册</h2>
+			</div>
+			<div class="main">
+				<ul class="user-info">
+					
+					<div class="header-title">
+						
+					<span class="h1"></span><span class="word">十元包邮账号登录</span><span class="h2"></span>
+					</div>
+						<li class="username font1">
+							<input type="input" placeholder="请输入手机号,可用于找回密码"/>
+							<p></p>
+						</li>
+						<li class="password font1">
+							<input type="password" placeholder="设置密码(6-20位字符)"/>
+							<p></p>
+						</li>
+						<li class="r_password font1">
+							<input type="password" placeholder="重复输入密码(6-20位字符)"/>
+							<p></p>
+						</li>
+					</ul>
+					
+			</div><div class="btn" id="btn">立即注册
+					</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$("#return").click(function(){
+				window.location.href = "login.html";
+				});
+
+				$(".user-info li input").focus(function(){
+					// console.log($(this).next());
+					// console.log($(this).parent());
+					if($(this).parents().hasClass("username")){
+						$(this).next().html("请输入您的手机号");
+					}else if($(this).parents().hasClass("password")){
+						$(this).next().html("请输入6-20位字母、数字、下划线组合的字符");
+					}else{
+						$(this).next().html("请再次输入您的密码");
+					}
+					
+				})
+
+				$(".user-info li input").blur(function(){
+					var value = $(this).val();
+					var value1 = "";
+					var $parent = $(this).parent();
+					var $next = $(this).next();
+					if($parent.hasClass("username")){
+						if(/^[1][3|5|7|8]{1}\d{9}$/.test(value)){
+							$next.html("");
+						}else{
+							$next.addClass("err");
+							// console.log($next)
+							$next.html("请输入正确的手机号");
+
+						}
+					}else if($parent.hasClass("password")){
+
+
+						if(/^[a-zA-Z0-9_]{6,20}$/.test(value)){
+							$next.html("");
+						}else{
+							$next.addClass("err");
+							$next.html("密码只能为6-20位字母数字下划线组合");
+						}
+
+					}else{
+						// console.log($parent.prev())
+						var val = $parent.prev().find("input").val();
+						// console.log(val)
+						if(value == val){
+							$next.html("");
+						}else{
+							$next.addClass("err");
+							$next.html("两次输入不一致，请重新输入");
+						}
+					}
+				})
+				$("#btn").click(function(){
+					if($(".r_password p").html() == ""){
+						$.ajax({
+							url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+							type:"get",
+							data:{
+								status:"register",
+								userID:$(".username input").val(),
+								password:$(".password input").val(),
+							},
+							success:function(data){
+								//console.log(data)
+								if(data == 1){
+									alert("该用户注册成功!");
+									window.location.href = "login.html";
+								}else if(data==0){
+									alert("重名");
+								}
+							}
+						});
+					}else{
+						alert("请填写正确的信息")
+					}
+				})
+			})
+		</script>
+	</body>
+	

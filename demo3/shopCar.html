@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>购物车</title>
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = 100 * (document.documentElement.clientWidth/640) + "px";
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/shopCar.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_2x2cvqy6a4qjjor.css">
+</head>
+<body>
+	<header class="header">
+		购物车(<span class="num"></span>)
+		<span class="edit">编辑</span>
+		<i class="iconfont icon-xinxi"></i>
+	</header>
+	<div class="wrapper">
+		<div class="iscroll">
+			<p class="down">
+				<i class="iconfont icon-xiangxia"></i>
+				下拉即可刷新...
+			</p>
+			<ul class="shopList">
+				<li class="shopLi">
+					<div class="storeTop clear">
+						<i class="iconfont icon-yuanquan topQuan"></i>
+						<img src="img/icon.png" alt="" class="iconStore">
+						<span class="storeName">小雨玲玲</span>
+						<i class="iconfont icon-next"></i>
+						<ul class="handle clear">
+							<li>领券</li>
+							<li class="edit1">编辑</li>
+						</ul>
+					</div>
+					<div class="storeDop clear">
+						<i class="iconfont icon-yuanquan downQuan"></i>
+						<img src="" alt="" class="merImg">
+						<div class="storeDetail">
+							<p class="merName"></p>
+							<p class="merDetail clear">
+								<span class="merColor">颜色分类:</span>
+								<span class="merColorDetail">咖啡色</span>
+								<span class="merDaparent">;</span>
+								<span class="merSize">尺码:</span>
+								<span class="merSizeDetail">S</span>
+							</p>
+							<p class="merPrice">
+								<span class="priceNow">
+									<span class="priceNowIcon">¥</span>
+									<span class="priceNowCur"></span>
+								</span>
+								<del class="priceOri">
+									<span class="priceOriIcon">¥</span>
+									<span class="priceOriCur"></span>
+								</del>
+							</p>
+						</div>
+						<div class="storeEdit">
+							<div class="storeEditUp clear">
+								<span class="storeSub">-</span>
+								<input type="text" class="storeNum" value="1">
+								<span class="storeAdd">+</span>
+							</div>
+							<div class="storeEditDown clear">
+								<span class="merColor">颜色分类:</span>
+								<span class="merColorDetail">咖啡色</span>
+								<span class="merDaparent">;</span>
+								<span class="merSize">尺码:</span>
+								<span class="merSizeDetail">S</span>
+							</div>
+							<div class="storeEditDel">
+								删除
+							</div>
+						</div>
+					</div>
+					<div class="number">
+						<span class="num">×</span>
+						<span class="numb">1</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="shopFooter clear">
+		<i class="iconfont icon-yuanquan"></i>
+		<span class="choose">全选</span>
+		<span class="totle">合计:</span>
+		<span class="totlePrice">¥</span>
+		<span class="carriage">不含运费</span>
+		<button class="account">
+			结算(<span class="accountPrice"></span>)
+		</button>
+	</div>
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/event.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/touch.js"></script>
+	<script type="text/javascript" src="js/shopCar.js"></script>
+</body>
+</html>

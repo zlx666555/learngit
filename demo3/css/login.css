@@ -1,0 +1,151 @@
+html{
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+}
+.wrap {
+	width: 100%;
+	height: 100%;
+}
+.header {
+	width: 100%;
+	height: 9.6%;
+	background: #fe4481;
+	display: flex;
+}
+.header #return{
+	display: block;
+	width: 0.8rem;
+	height: 0.4rem;
+	text-align: center;
+	padding-top: 0.1rem;
+	color: #FFFFFF;
+	font-size: 0.30rem;
+	text-decoration: none;
+}
+.header-title {
+	color: white;
+	font-size: 24px;
+	float: left;
+	margin: auto;
+	width: 4.0rem;
+	text-align: center;
+}
+.header .register{
+	    text-decoration: none;
+    font-size: 0.22rem;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    width: 1.3rem;
+    height: 0.4rem;
+    line-height: 0.6rem;
+}
+.main{
+	height:90.4%;
+	width: 100%;
+	background: #f6f6f6;
+	display: flex;
+}
+.user-info{
+	margin:5%;
+	width: 90%;
+	height: 73%;
+}
+.user-info .h1{
+	width: 0.7rem;
+	display: block;
+	float: left;
+
+	border-bottom: 1px solid #9a9a9a;height: 0.3rem;
+	
+}
+.user-info .h2{
+	width: 0.7rem;
+	display: block;
+	float: left;
+
+	border-bottom: 1px solid #9a9a9a;height: 0.3rem;
+	
+}
+.user-info .word{
+	height: 0.5rem;
+	line-height: 0.7rem;
+	color: #9a9a9a;
+	text-align: center;
+	font:0.14rem "微软雅黑";
+		display: block;
+	float: left;
+    padding: 0.2rem 0.1rem;
+}
+.user-info li{
+	width: 100%;
+	height: 13.66%;
+	display: flex;
+	
+}
+.user-info li input{
+	width: 80%;
+    height: 80%;
+    margin: auto;
+    border-radius: 6px;
+    margin-left: 60px;
+   border: none;
+   outline: none;
+} 
+.user-info .username {
+	background:#FFFFFF url(../img/guide_account_nm.png) 0.3rem no-repeat;
+	background-color: #FFFFFF;
+	background-size: 0.3rem;
+	margin-bottom: 0.27rem;
+}
+.user-info .password{
+	background:#FFFFFF url(../img/guide_10_nm.png) 0.3rem no-repeat;
+	background-color: #FFFFFF;
+	background-size: 0.3rem;
+}
+.user-info li.font1 input{
+	color: #9B9B9B;
+	font-size: 16px;
+	text-indent: 1em;
+}
+.user-info li.checkBox input{
+	width: 10%;
+	height: 30%;
+	margin: auto 0;
+}
+.user-info li.checkBox span{
+	width: 57%;
+/*	height: 40%;*/
+	font-size: 14px;
+	display: inline-block;
+	margin: auto 0;
+}
+.user-info li.checkBox a{
+	width: 43%;
+	height: 30%;
+	font-size: 0.13rem;
+	color: #fd4979;
+	display: inline-block;
+	margin: auto 0;
+	margin-left: -20%;
+}
+.user-info li.login input{
+	background: #fe4481;
+	width: 9.9rem;
+	margin-left: 1px;
+	
+}
+.user-info li.register input{
+	background: #595959;
+	border: 1px solid #000;
+}
+.user-info li.font2 input{
+	color: #fff;
+	font-size: 18px;
+}
