@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/page4.css"/>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/page4.js" ></script>
+		<script type="text/javascript" src="../js/cookie.js" ></script>
+	</head>
+	<body>
+		<div class="site-top-nav">
+			<div class="site-top-nav-bd wrap">
+				<div class="login-info">
+					<!--登陆后-->
+					<!--<span class="welcome-text">
+						您好，
+						<a href="" rel="nofollow" hidefocus="true">1830***9157</a>
+						<a href="" title="普通会员" target="_blank" class="grade-min vip0" hidefocus="true">普通会员</a>
+						<a href="">退出</a>
+					</span>-->
+					<div class="login-type">
+						<a href="">
+							<span class="login-option" id="qq-login">QQ登录</span>
+						</a>
+						<div class="open-login">
+							<a href="">
+								<span class="login-option" id="taobao-login">淘宝登录</span>
+							</a>
+							<a href="">
+								<span class="login-option" id="weibo-login">微博登录</span>
+							</a>
+						</div>
+					</div>
+					<a class="plz-login" href="">请登录</a>
+					<a href="" class="free-reg">
+						免费注册
+						<span class="reg-reward-icon"></span>
+					</a>
+				</div>
+				<div class="n-quick-menu quick-menu">
+					<a href="" class="my-account info-item">我的米折</a>
+					<a href="" class="my-order info-item">我的订单</a>
+					<a href="" class="my-message info-item">消息</a>
+					<a href="" class="help-index info-item">帮助中心</a>
+					<a href="" class="tel-member info-item">联系客服</a>
+					<span class="app-icon"></span>
+					<a href="" class="mizhe-app info-item">手机米折</a>
+					<span class="drop-div">
+						<span class="watch-app info-item">关注</span>
+						<div class="watch-wrap">
+							<div class="weixin-wrap">
+								<a href="javascript:;" style="line-height: 1;color: #999;">
+									<img src="../img/qrcode_app.jpg" />
+									<p>米折官方微信号</p>
+									<p>mizhewang</p>
+								</a>
+							</div>
+							<div class="right-part">
+								<a href="">
+									<img src="../img/weibo_icon.png" />
+								</a>
+								<p>官方微博</p>
+								<a href="">
+									<img src="../img/qqzone.png" />
+									<p id="pp">QQ空间</p>
+								</a>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="search">
+			<div class="wrap">
+				<a class="logo" href="" hidefocus="true">
+					<img src="../img/new-logo.jpg" />
+				</a>
+				<div class="main-search">
+					<div class="search-panel clearfix">
+						<ul class="n-search-tabs clearfix">
+							<li class="current">淘宝</li>
+							<li class="shop">商城</li>
+						</ul>
+						<div class="tab-panel taopao-panel" style="display: block;">
+							<div class="search-fields">
+								<input type="text" name="q" id="offer-q" class="hint" value="粘贴淘宝/天猫商品标题在这，如韩都衣舍连衣裙" />
+							</div>
+							<input type="submit" name="q-submit" id="offer-submit" class="search-submit" />
+						</div>
+						<div class="tab-panel mall-panel">
+							<div class="search-fields">
+								<input type="text" name="q" id="mall-q" class="hint" value="输入商城名称或网址查询返利，如当当网" />
+							</div>
+							<input type="submit" name="q-submit" id="mall-submit" class="search-submit" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-nav">
+			<div class="main-nav-bd wrap">
+				<ul class="nav-list">
+					<li><a href="../index.html" style="background-color:#900;">首页</a></li>
+					<li><a href="../page2-pinpai.html">品牌特卖</a></li>
+					<li><a href="">9.9包邮</a></li>
+					<li><a href="">限量购</a></li>
+					<li><a href="">10元购</a></li>
+					<li><a href="">购物返利</a></li>
+					<li><a href="">手机客户端</a></li>
+				</ul>
+				<div class="right-link">
+					<a href="">商品中心</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="reg-wrap">
+				<div class="part-main">
+					<h2 class="title">注册米折会员</h2>
+					<form id="reg-form" class="reg_form" action="" method="post">
+						<fieldset>
+							<label for="telnum-input">您的手机号：</label>
+							<input type="text" name="phone" id="telnum-input" class="m-input"
+								data-parsley-required="" data-parsley-required-message="手机号不能为空" data-parsley-pattern="1[34578][0-9]\d{8}"/>
+							<ul class="parsley-errors-list" id="parsley-id-8081">
+								<li class="parsley-required"></li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<label for="phone-checkcode-input">验证码：</label>
+							<input type="text" name="cheatcode" id="phone-checkcode-input" autocomplete="off" class="s-input" data-parsley-required="" data-parsley-required-message="验证码不能为空" data-parsley-id="1257">
+							<ul class="parsley-errors-list" id="parsley-id-1257">
+								<li class="parsley-required">验证码不能为空</li>
+							</ul>
+							<div class="checkimg" style="display: inline-block;"></div>
+							<span class="change-checkcode" onclick="random()">换一换</span>
+						</fieldset>
+						<fieldset>
+							<label for="tel-validate-input">短信校验码：</label>
+							<input type="text" name="phonecode" id="tel-validate-input" class="s-input" data-parsley-required="" data-parsley-required-message="验证号不能为空" data-parsley-id="5769">
+							<ul class="parsley-errors-list" id="parsley-id-5769">
+								<li class="parsley-required">验证号不能为空</li>
+							</ul>
+							<span id="sms-btn">免费获取校验码</span>	
+							<span id="xiaomimi" style="display: none;"></span>
+						</fieldset>
+						<fieldset>
+							<label for="pwd-input">密码：</label>
+							<input type="password" name="passwd" id="pwd-input" class="m-input" data-parsley-minlength="6" data-parsley-minlength-message="密码不能小于6位" data-parsley-required=""
+								data-parsley-required-message="密码不能为空" data-parsley-id="4861">
+							<ul class="parsley-errors-list" id="parsley-id-4861">
+								<li class="parsley-required">密码不能为空</li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<label for="pwd-confirm">确认密码：</label>
+							<input type="password" name="repasswd" id="pwd-confirm" class="m-input" data-parsley-minlength="6" data-parsley-minlength-message="确认密码不能小于6位" data-parsley-required="" 
+								data-parsley-required-message="确认密码不能为空" data-parsley-id="0393">
+								<ul class="parsley-errors-list" id="parsley-id-0393">
+									<li class="parsley-required">确认密码不能为空</li>
+								</ul>
+						</fieldset>
+						<p class="law-text">注册即接受
+							<a href="http://www.mizhe.com/help/agreement.html" target="_blank">
+								《米折网使用协议》
+							</a>
+						</p>
+						<input class="reg-submit-btn" id="reg-submit-btn" type="button" value="注册">
+					</form>
+				</div>
+				<div class="part-right">
+					<p class="title">已有账号？</p>
+						<a class="link-login" href="page5.html">马上登录</a> 
+						<p class="n-text">你也可以通过以下途径登录</p>
+						<ul>
+							<li><a href="http://www.mizhe.com/openid/qq/oauth.html" class="iframe icon16 qq-conn" rel="nofollow" title="用QQ账号登录米折网" hidefocus="true">用QQ账号登录</a></li>
+							<li><a href="http://www.mizhe.com/openid/weibo/oauth.html" class="iframe icon16 sina-conn" rel="nofollow" title="用新浪微博登录米折网" hidefocus="true">用新浪微博登录</a></li>
+							<li><a href="http://www.mizhe.com/openid/taobao/top.html" class="iframe icon16 taobao-conn" rel="nofollow" title="用淘宝账号登录米折网" hidefocus="true">用淘宝账号登录</a></li>
+						</ul>
+						<div style="margin-top: 50px;color: #777">
+						    <p style="margin-bottom:10px;">下载手机APP</p>
+						    <a href="http://m.mizhe.com/" onclick="_hmt.push(['_trackEvent', 'app', 'appview', 'appview_from_reg']);" target="_blank" hidefocus="true">
+						    	<img src="../img/login_appprom.png"></a>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix" id="footer">
+			<div class="wrapper">
+				<div class="footer-nav">
+					<a href="">首页</a>|
+					<a href="">关于米折</a>|
+					<a href="">媒体报道</a>|
+					<a href="">人才招聘</a>|
+					<a href="">友情链接</a>|
+					<a href="">商务合作</a>|
+					<a href="">米折大使</a>|
+					<a href="">帮助中心</a>|
+					<a href="">联系客服</a>|
+					<a href="">手机客户端</a>|
+					<a href="">网站地图</a>|
+				</div>
+				<div class="cert">
+					<a href="">
+						<img src="../img/cyzone100.png"/>
+					</a>
+					<a href="">
+						<img src="../img/ec2012.png"/>
+					</a>
+					<a href="">
+						<img src="../img/cnnic.png"/>
+					</a>
+					<a href="">
+						<img src="../img/cxwz.png"/>
+					</a>
+					<a href="">
+						<img src="../img/hzgs.png" />
+					</a>
+				</div>
+				<div class="copyright">
+					© 2011-2016 米折网 - <a>杭州互秀电子商务有限公司</a>&nbsp;旗下导购<a>返利网</a> - 浙ICP备12005806
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

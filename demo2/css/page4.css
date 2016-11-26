@@ -1,0 +1,192 @@
+.container{
+    background-color: #f1efeb;
+    padding-top: 20px;
+}
+.reg-wrap{
+    width: 930px;
+    margin:  0 auto 30px;
+    background-color: #fff;
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
+.reg-wrap .part-main{
+    width: 590px;
+    display: inline-block;
+    vertical-align: top;
+}
+.reg-wrap .part-main .title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 35px;
+    margin-bottom: 46px;
+}
+.reg-wrap .part-main fieldset{
+    position: relative;
+    margin-bottom: 13px;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+}
+.reg-wrap .part-main label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-size: 12px;
+    color: #666;
+}
+.reg-wrap .part-main input[type="text"],
+.reg-wrap .part-main input[type="password"]
+{
+    height: 26px;
+    line-height: 26px;
+    padding-left: 3px;
+    border: thin solid lightgray;
+    box-shadow: 0 0 3px #dfdfdf inset;
+    border-radius: 3px;
+}
+.reg-wrap .part-main .m-input{
+    width: 226px;
+}
+.parsley-errors-list{
+    position: absolute;
+    left: 360px;
+    top: 1px;
+    font-size: 14px;
+    color: #d53939;
+    line-height: 22px;
+    margin: 2px 0 3px;
+  	padding: 0;
+  	list-style-type: none;
+  	opacity: 0;
+}
+.reg-wrap .part-main .s-input{
+    width: 96px;
+}
+.reg-wrap .part-main .checkimg{
+    width: 85px;
+    height: 28px;
+    margin-left: 16px;
+    vertical-align: top;
+    cursor: pointer;
+}
+.reg-wrap .change-checkcode{
+    vertical-align: bottom;
+    margin-left: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
+#sms-btn{
+    display: inline-block;
+    vertical-align: top;
+    width: 96px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 28px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.reg-wrap .part-main  .law-text{
+    margin:20px 0 0 103px;
+    color: #888;
+    font-size: 13px;
+}
+.reg-wrap .part-main  .law-text a{
+    color: #111;
+}
+.reg-submit-btn{
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 35px;
+    line-height: 31px;
+    color: #fff;
+    background-color: #ff6600;
+    border: 1px solid #f30;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 103px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.part-right{
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    padding-left: 40px;
+    background: url("http://s0.husor.cn/image/tj_split.png") no-repeat scroll 15px 35px #fff;
+    text-align: center;
+    height: 400px;
+}
+.part-right .title{
+    font-size: 12px;
+    color: #333;
+    margin: 20px auto;
+}
+.part-right .link-login{
+    display: block;
+    width: 106px;
+    margin: 0 auto;
+    height: 28px;
+    border: 1px solid #538312;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#7DB72F),to(#4E7D0E));
+}
+.part-right .n-text{
+    color: #777;
+    margin: 0;
+    font-size: 12px;
+}
+.part-right ul li {
+    margin: 5px 0px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #dddddd;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.part-right ul li a {
+    color: #666;
+    text-decoration: none;
+    height: 24px;
+    display: inline-block;
+    padding: 0px 8px;
+    padding-left: 26px;
+    font-size: 12px;
+}
+.qq-conn{
+	background:url(../img/icons-m.png) no-repeat 6px -25px;
+}
+.sina-conn {
+    background:url(../img/icons-m.png) no-repeat 6px -150px;
+}
+.taobao-conn {
+    background:url(../img/icons-m.png) no-repeat 6px -100px;
+}
+.part-right ul{
+    width: 120px;
+    margin: 20px auto;
+}
+.parsley-errors-list li{
+    padding-left: 30px;
+    background:url(../img/cuo.png) no-repeat 8px 4px;
+    display: inline-block;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    padding-right: 12px;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page2.css"/>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/page2.js" ></script>
+		<script type="text/javascript" src="js/shopcaar.js" ></script>
+		<script type="text/javascript" src="js/cookie.js" ></script>
+	</head>
+	<body>
+		<div class="site-top-nav">
+			<div class="site-top-nav-bd wrap">
+				<div class="login-info">
+					<!--登陆后-->
+					<!--<span class="welcome-text">
+						您好，
+						<a href="" rel="nofollow" hidefocus="true">1830***9157</a>
+						<a href="" title="普通会员" target="_blank" class="grade-min vip0" hidefocus="true">普通会员</a>
+						<a href="">退出</a>
+					</span>-->
+					<!--登录前-->
+					<div class="login-type">
+						<a href="">
+							<span class="login-option" id="qq-login">QQ登录</span>
+						</a>
+						<div class="open-login">
+							<a href="">
+								<span class="login-option" id="taobao-login">淘宝登录</span>
+							</a>
+							<a href="">
+								<span class="login-option" id="weibo-login">微博登录</span>
+							</a>
+						</div>
+					</div>
+					<a class="plz-login" href="">请登录</a>
+					<a href="" class="free-reg">
+						免费注册
+						<span class="reg-reward-icon"></span>
+					</a>
+				</div>
+				<div class="n-quick-menu quick-menu">
+					<a href="" class="my-account info-item">我的米折</a>
+					<a href="" class="my-order info-item">我的订单</a>
+					<a href="" class="my-message info-item">消息</a>
+					<a href="" class="help-index info-item">帮助中心</a>
+					<a href="" class="tel-member info-item">联系客服</a>
+					<span class="app-icon"></span>
+					<a href="" class="mizhe-app info-item">手机米折</a>
+					<span class="drop-div">
+						<span class="watch-app info-item">关注</span>
+						<div class="watch-wrap">
+							<div class="weixin-wrap">
+								<a href="javascript:;" style="line-height: 1;color: #999;">
+									<img src="img/qrcode_app.jpg" />
+									<p>米折官方微信号</p>
+									<p>mizhewang</p>
+								</a>
+							</div>
+							<div class="right-part">
+								<a href="">
+									<img src="img/weibo_icon.png" />
+								</a>
+								<p>官方微博</p>
+								<a href="">
+									<img src="img/qqzone.png" />
+									<p id="pp">QQ空间</p>
+								</a>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="search">
+			<div class="wrap">
+				<a class="logo" href="" hidefocus="true">
+					<img src="img/new-logo.jpg" />
+				</a>
+				<div class="main-search">
+					<div class="search-panel clearfix">
+						<ul class="n-search-tabs clearfix">
+							<li class="current">淘宝</li>
+							<li class="shop">商城</li>
+						</ul>
+						<div class="tab-panel taopao-panel" style="display: block;">
+							<div class="search-fields">
+								<input type="text" name="q" id="offer-q" class="hint" value="粘贴淘宝/天猫商品标题在这，如韩都衣舍连衣裙" />
+							</div>
+							<input type="submit" name="q-submit" id="offer-submit" class="search-submit" />
+						</div>
+						<div class="tab-panel mall-panel">
+							<div class="search-fields">
+								<input type="text" name="q" id="mall-q" class="hint" value="输入商城名称或网址查询返利，如当当网" />
+							</div>
+							<input type="submit" name="q-submit" id="mall-submit" class="search-submit" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-nav">
+			<div class="main-nav-bd wrap">
+				<ul class="nav-list">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="page2-pinpai.html" style="background-color: #900;">品牌特卖</a></li>
+					<li><a href="">9.9包邮</a></li>
+					<li><a href="">限量购</a></li>
+					<li><a href="">10元购</a></li>
+					<li><a href="">购物返利</a></li>
+					<li><a href="">手机客户端</a></li>
+				</ul>
+				<div class="right-link">
+					<a href="">商品中心</a>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="brand-index-box">
+				<div class="recommand-wrap">
+					<div class="title-box">
+						<h1>今日特卖</h1>
+					</div>
+					<ul class="recommand-lists">
+						
+					</ul>
+				</div>
+				<div class="brand-main-wrap">
+					<div class="main-title">
+						<div class="title-text">每天九点上新</div>
+						<div class="sub-text">
+							本场剩余
+							<span class="brand-countdown">
+								<em class="hh"></em>
+								小时
+								<em class="mm"></em>
+								分钟
+								<em class="ss"></em>
+								秒
+							</span>
+						</div>
+					</div>
+					<!--导航条  跟随-->
+					<div class="brand-nav-wrap">
+						<div class="brand-center">
+							<div class="brand-logo"></div>
+							<ul class="brand-nav-box">
+								<li class="selected">
+									<a href="">上新</a>
+									<em>·</em>
+								</li>
+								<li>
+									<a href="">女装</a>
+									<em>·</em>
+								</li>
+								<li>
+									<a href="">女鞋</a>
+									<em>·</em>
+								</li>
+								<li>
+									<a href="">箱包</a>
+									<em>·</em>
+								</li>
+								<li>
+									<a href="">居家</a>
+									<em>·</em>
+								</li>
+								<li>
+									<a href="">美妆</a>
+									<em>·</em>
+								</li>
+								<li>
+									<a href="">母婴用品</a>
+									<em class="e4">·</em>
+								</li>
+								<li>
+									<a href="">童装</a>
+									<em>·</em>
+								</li>
+								<li class="ex-nav">
+									<a href="">
+										<span class="iconfont-brand"></span>
+										昨日特卖
+									</a>
+									<em class="e4">·</em>
+								</li>
+							</ul>
+							<a class="tomorrow-link" href="">
+								明日预告
+								<span class="iconfont-brand"></span>
+							</a>
+						</div>
+					</div>
+					<div class="brand-content">
+						<ul class="brand-content-lists infinite-scroll">
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="buybar-wrap">
+				<ul class="side-box-lists">
+					<li class="bar-cart-box side-block">
+						<a href="" class="icon-mini main-link iconfont_bar">
+							<div class="view-side hidden"></div>
+							<div class="cart-num hidden">0</div>
+						</a>
+						<!--添加购物车-->
+						<div class="cart-content-box" id="cart-content-box" style="display: none;">
+							<div class="top-title-bar">
+								<span class="top-cart-icon iconfont"></span>
+								<span class="cart-title">购物车是空的</span>
+							</div>
+							<ul class="cart-item-lists no-item">
+								<p class="no-item-text">赶紧去挑选商品吧</p>
+							</ul>
+							<div class="foot-box">
+								<div class="total-box">
+									<span class="cal-text">小计:</span>
+									<span class="subtotal-money">¥0.00</span>
+									
+								</div>
+								<a class="cart-link-btn" href="html/page6.html">去结算</a>
+							</div>
+						</div>
+					</li>
+					<li class="mobile-box side-block">
+						<a href="" class="icon-mini iconfont_bar mobile-link main-link">
+							<div class="app-qrcode-box" style="display: none;">
+								<p>下载手机APP</p>
+								<p>随时随地看上新</p>
+								<img class="qrcode-img" src="img/qrcode_down.jpg"/>
+							</div>
+						</a>
+					</li>
+					<li class="service-box side-block">
+						<a href="index.html" class="main-link">
+							<span class="icon-mini iconfont_bar" style="display: inline;"></span>
+							<p class="hover-text hidden">客服在线</p>
+						</a>
+					</li>
+					<li class="ut-box side-block">
+						<a class="main-link">
+							<span 
+								onclick="$('html,body').animate({scrollTop: 0}, 1000)"
+								 class="icon-mini iconfont"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer-content">
+				<div class="wrapper">
+					<p class="footer-nav">
+						<a>首页</a>
+						<a>关于米折</a>
+						<a>媒体报道</a>
+						<a>人才招聘</a>
+						<a>联系我们</a>
+						<a>商务合作</a>
+						<a>帮助中心</a>
+						<a>联系客服</a>
+						<a>手机客户端</a>
+					</p>
+					<p>© 2011-2016 米折网 - 杭州互秀电子商务有限公司 旗下网站 - 浙ICP备12005806</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+.field label{
+	display: inline-block;
+	text-align: right;
+	width: 70px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+#email{
+	position: relative;
+}
+.field input{
+	border: 1px solid #ddd;
+	height: 22px;
+	line-height: 22px;
+	margin: 0;
+	margin-right:3px;
+	padding: 3px;
+	vertical-align: middle;
+	border-radius:2px 2px;
+	width: 220px;
+}
+#email_list{
+	z-index: 2;
+	list-style: none;
+	border: 1px solid #999;
+	border-radius: 2px;
+	position: absolute;
+	background: #fff;
+	display: none;
+	top: 312px; 
+	left: 257px;
+}
+#email_list .current{
+	background: #baeafb;
+}
+#email_list .first_li{
+	cursor: default;
+}
+#email_list li{
+	width: 100%;
+	line-height: 30px;
+	text-indent: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	font-size: 13px;
+	color: rgb(102,102,102);
+}
+.field,.safe,.submit{
+	min-height: 32px;
+	line-height: 32px;
+	color: #666;
+	margin: 18px 0;
+}
+.i-passwd{
+	width: 145px;
+}
+.forget-pw,.field-note{
+	margin-left:10px;
+	font-size: 11px;
+}
+#email:focus{
+	border-color:#fc0;
+	background-color:rgb(250,250,189);
+}
+.field .i-passwd{
+	width: 145px;
+}
+.field .i-passwd:focus{
+	background-color:rgb(250,250,189);
+}
+.part-main .safe{
+	padding-left: 70px;
+}
+input[type="checkbox"]{
+	padding: 3px 3px 3px 4px;
+}
+.remember-me{
+	font-size: 12px;
+	display: inline-block;
+}
+.get-btn{
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+	height: 37px;
+	line-height: 36px;
+	padding-bottom: 2px;
+	margin-right:20px;
+	text-align: center;
+	width: 103px;
+	color: #fff;
+	display: inline-block;
+	background: url(../img/orange_btns.png) no-repeat scroll 0 0 transparent;
+}
+.submit{
+	padding-left: 70px;
+}
+.error-field{
+	display: inline;
+	color: red;
+	background:url(../img/indicator-error.png) no-repeat left center;
+	padding-left: 18px;
+	margin: 0 0 .5em;
+}
+.youxiang-error{
+	display: none;
+}
+.pw-error{
+	display: none;
+}

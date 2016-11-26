@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/page2.css"/>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/cookie.js" ></script>
+		<script type="text/javascript" src="../js/page6.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../css/page6.css"/>
+		<script type="text/javascript" src="../js/path.js" ></script>
+	</head>
+	<body>
+		<div class="site-top-nav">
+			<div class="site-top-nav-bd wrap">
+				<div class="login-info">
+					<!--登陆后-->
+					<!--<span class="welcome-text">
+						您好，
+						<a href="" rel="nofollow" hidefocus="true">1830***9157</a>
+						<a href="" title="普通会员" target="_blank" class="grade-min vip0" hidefocus="true">普通会员</a>
+						<a href="">退出</a>
+					</span>-->
+					<div class="login-type">
+						<a href="">
+							<span class="login-option" id="qq-login">QQ登录</span>
+						</a>
+						<div class="open-login">
+							<a href="">
+								<span class="login-option" id="taobao-login">淘宝登录</span>
+							</a>
+							<a href="">
+								<span class="login-option" id="weibo-login">微博登录</span>
+							</a>
+						</div>
+					</div>
+					<a class="plz-login" href="">请登录</a>
+					<a href="" class="free-reg">
+						免费注册
+						<span class="reg-reward-icon"></span>
+					</a>
+				</div>
+				<div class="n-quick-menu quick-menu">
+					<a href="" class="my-account info-item">我的米折</a>
+					<a href="" class="my-order info-item">我的订单</a>
+					<a href="" class="my-message info-item">消息</a>
+					<a href="" class="help-index info-item">帮助中心</a>
+					<a href="" class="tel-member info-item">联系客服</a>
+					<span class="app-icon"></span>
+					<a href="" class="mizhe-app info-item">手机米折</a>
+					<span class="drop-div">
+						<span class="watch-app info-item">关注</span>
+						<div class="watch-wrap">
+							<div class="weixin-wrap">
+								<a href="javascript:;" style="line-height: 1;color: #999;">
+									<img src="../img/qrcode_app.jpg" />
+									<p>米折官方微信号</p>
+									<p>mizhewang</p>
+								</a>
+							</div>
+							<div class="right-part">
+								<a href="">
+									<img src="../img/weibo_icon.png" />
+								</a>
+								<p>官方微博</p>
+								<a href="">
+									<img src="../img/qqzone.png" />
+									<p id="pp">QQ空间</p>
+								</a>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="search">
+			<div class="wrap">
+				<a class="logo" href="" hidefocus="true">
+					<img src="../img/new-logo.jpg" />
+				</a>
+				<div class="main-search">
+					<div class="search-panel clearfix">
+						<ul class="n-search-tabs clearfix">
+							<li class="current">淘宝</li>
+							<li class="shop">商城</li>
+						</ul>
+						<div class="tab-panel taopao-panel" style="display: block;">
+							<div class="search-fields">
+								<input type="text" name="q" id="offer-q" class="hint" value="粘贴淘宝/天猫商品标题在这，如韩都衣舍连衣裙" />
+							</div>
+							<input type="submit" name="q-submit" id="offer-submit" class="search-submit" />
+						</div>
+						<div class="tab-panel mall-panel">
+							<div class="search-fields">
+								<input type="text" name="q" id="mall-q" class="hint" value="输入商城名称或网址查询返利，如当当网" />
+							</div>
+							<input type="submit" name="q-submit" id="mall-submit" class="search-submit" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-nav">
+			<div class="main-nav-bd wrap">
+				<ul class="nav-list">
+					<li><a href="../index.html" style="background-color:#900;">首页</a></li>
+					<li><a href="../page2-pinpai.html">品牌特卖</a></li>
+					<li><a href="">9.9包邮</a></li>
+					<li><a href="">限量购</a></li>
+					<li><a href="">10元购</a></li>
+					<li><a href="">购物返利</a></li>
+					<li><a href="">手机客户端</a></li>
+				</ul>
+				<div class="right-link">
+					<a href="">商品中心</a>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="white-bg box-shadow">
+				<div class="cart-process process-step1">
+			        <h1>我的购物车</h1>
+			        <i>&nbsp;</i>
+			    </div>
+			    <div style="display: block;" class="cart-list p20">
+					<form class="pure-form">
+			            <table class="pure-table">
+			                <thead>
+			                    <tr>
+			                        <th class="cart-th-check">
+			                            <input type="checkbox" checked="checked" class="J_checkAll"> 全选
+			                        </th>
+			                        <th class="cart-th-item-info">商品</th>
+			                        <th class="cart-th-item-sku">商品信息</th>
+			                        <th class="cart-th-item-price">单价(元)</th>
+			                        <th class="cart-th-number">数量</th>
+			                        <th class="cart-th-subtotal">小计(元)</th>
+			                        <th class="cart-th-ops">操作</th>
+			                    </tr>
+			                </thead>
+			                <!-- 购物车商品列表 -->
+			                <tbody class="view-CartList">
+			                	<tr class="seg-entry"></tr>
+			                	<tr class="event-entry J_eventEntry" data-eventid="228585">
+			                		<td colspan="7"><input type="checkbox" class="J_eventCheck" data-eventid="228585" checked="checked">
+			                		<span class="event-title"><a href="http://brand.mizhe.com/martshow/228585.html" target="_blank">爱仕达/ASD特卖专场</a></span>
+			                		<em class="green-tag" style="display:inline;">满减</em>
+			                		<span class="promotions-info" style="display:inline;">
+			                			满299元减20元，满399元减30元
+			                		</span>
+			                		</td>
+			                	</tr>
+			                	<tr class="item-entry view-ItemEntry " data-cartid="703508072">
+			                		<td class="cart-td-check first-for-ie">
+			                			<input class="J_itemCheck" data-eventid="228585" data-cartid="703508072" type="checkbox" checked="checked">
+			                		</td>
+			                		<td class="cart-td-item-info clearfix" style="height: 78px;">
+			                			<a class="image" href="http://brand.mizhe.com/martshow/item/228585-1713677.html" target="_blank">
+			                				<img src="../img/1111.jpg">
+			                			</a>
+			                			<a class="title" href="http://brand.mizhe.com/martshow/item/228585-1713677.html" target="_blank">
+			                				爱仕达22cm六保险不锈钢压力锅燃气电磁炉通用 WG1822DN</a>
+			                		</td>
+			                		<td class="cart-td-item-sku">
+			                			<p>不锈钢</p>
+			                		</td>
+			                		<td class="cart-td-item-price">
+			                			<p class="view-ItemEntryPrice">199.00</p>
+			                			<p class="strike">389.00</p>
+			                		</td>
+			                		<td class="cart-td-number">
+			                			<div>
+			                				<a href="javascript:;" class="number-op del-num view-ReductionItemNumBtn">
+			                					<i class="iconfont"></i>
+			                				</a>
+			                				<input readonly="readonly" data-eventid="228585" data-cartid="703508072" class="view-ItemEntryNum" type="text" value="">
+			                				<a href="javascript:;" class="number-op add-num view-AdditionItemNumBtn">
+			                					<i class="iconfont"></i>
+			                				</a>
+			                			</div>
+			                		</td>
+			                		<td class="cart-td-subtotal">
+			                			<span class="price view-ItemSubtotal">398.00</span>
+			                		</td>
+			                		<td class="cart-td-ops last-for-ie">
+			                			<a href="javascript:;" data-eventid="228585" data-cartid="703508072" class="view-DelItemBtn">删除
+			                			</a>
+			                		</td>
+			                	</tr>
+			                	<tr class="footer-entry view-FooterEntry" data-eventid="228585">
+			                		<td colspan="7">
+			                			<div class="subtotal-row">
+			                				<span class="price view-EventTotal">398.00</span>
+			                				<span class="title">小计：</span>
+			                			</div>
+			                		</td>
+			                	</tr>
+			                </tbody>
+			            </table>
+			            <div class="m-pay-bar-cont view-PaybarCont">
+			                <div id="pay-bar" class=" view-TotalBar">
+			                    <a id="pay-btn" class="cart-pay-btn fr view-ConfirmOrder" href="javascript:;" onclick='alert("订购成功")'>确认订单</a>
+			                    <span class="view-TotalBarPrice">
+			                        <span class="cart-payment price mr-15 fr" op-value="totalPrice">¥398.00</span>
+			                    </span>
+			                    <div class="cart-summary mr-15 fr view-TotalBarNum">
+			                        共有 <span class="red" op-value="totalNum">2</span> 件商品，总计(不含运费)：
+			                    </div>
+			                    <div class="clearfix cart-total-bar">
+			                        <input type="checkbox" id="s-all-f" checked="checked" class="s_all_slave cart_vm J_checkAll" name="s_all">
+			                        <label for="s-all-f">全选</label>
+			                        <a id="cartRemoveChecked" class="ml-15 underline grey view-BatchDelBtn" href="javascript:;">删除</a>
+			                    </div>
+			                </div>
+			            </div>
+			        </form>
+				</div>
+				<div style="display: none;" class="cart-empty">
+			        <p class="title">
+			            <i class="iconfont"></i>
+			            你的购物车还是空的，赶快去挑选商品吧
+			        </p>
+			        <p class="action"><a href="http://brand.mizhe.com/" class="blue">去看看正在特卖中的品牌商品 &gt;</a></p>
+			        <p>&nbsp;</p>
+			        <p class="action"><a href="#" class="c-999"><i class="iconfont"></i> 刷新我的购物车</a></p>
+			    </div>
+				
+				
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer-content">
+				<div class="wrapper">
+					<p class="footer-nav">
+						<a>首页</a>
+						<a>关于米折</a>
+						<a>媒体报道</a>
+						<a>人才招聘</a>
+						<a>联系我们</a>
+						<a>商务合作</a>
+						<a>帮助中心</a>
+						<a>联系客服</a>
+						<a>手机客户端</a>
+					</p>
+					<p>© 2011-2016 米折网 - 杭州互秀电子商务有限公司 旗下网站 - 浙ICP备12005806</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
