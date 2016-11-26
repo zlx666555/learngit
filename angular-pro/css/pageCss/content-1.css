@@ -1,0 +1,129 @@
+
+form input{
+	margin: 0;
+	padding: 0;
+}
+.admin{
+	background-color: #fff;
+	position: fixed;
+	border-left:1px solid #b5cfd9;
+	right: 0;
+	bottom: 0;
+	top: 105px;
+	left: 180px;
+	padding: 15px;
+	/*padding-bottom: 0;*/
+	overflow: auto;
+	padding-right: 15px;
+}
+.panel{
+	background-color: #fff;
+	border:1px solid #ddd;
+	border-radius:4px;
+}
+.panel-head{
+	background-color: #fcfcfc;
+	padding: 10px 15px;
+	border-radius:4px 4px 0 0;
+	border-bottom: 1px solid #ddd;
+}
+.body-content{
+	padding: 20px 0;
+	overflow: hidden;
+	border: 0;
+	font-size: 14px;
+}
+.form-group{
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.form-x .form-group .label{
+	width: 10%;
+}
+@media only screen and (min-width: 760px){
+	.form-x .form-group .label{
+		float: left;
+		text-align: right;
+		padding: 7px 7px 7px 0;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}
+.label{
+	display:block;
+	line-height:20px;
+	color: #202020;
+}
+@media only screen and (min-width: 760px){
+	.form-x .form-group .field{
+		float: left;
+		width: 85%;
+	}
+}
+/*.form-x .form-group .field {
+	float: left;
+	width: 85%;
+}*/
+.field{
+	position: relative;
+	float: left;
+}
+.btns{
+	position: relative;
+	display: inline-block;
+}
+.btns input{
+	width:103px;
+	height:42px;
+	background: #00aaee;
+	border: 0 none;
+	color: #fff;
+	margin-left: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	
+}
+
+.btns .btn_file_molding{
+	position:absolute;
+	left:0;top:0;z-index:1;
+	border:0 none;
+	filter:alpha(opacity=0);opacity:0}/*file的z-index要大于button*/
+.label label{
+	font-weight: normal;
+	color: #333;
+}
+.input{
+	font-size: 14px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	line-height: 20px;
+	display: block;
+	border-radius: 3px;
+	-webkit-appearance: none;
+}
+.button.bg-blue:hover{
+	border-color:#3bd;
+	background-color:#3bd;
+} 
+input[type = 'button']{
+	cursor: pointer;
+	color: #fff;
+}
+.button{
+	padding: 10px 15px;
+}
+.margin-left{
+	margin-left: 10px;
+}
+.button.bg-main.icon-check-square-o{
+	background: #08bbe1;
+	padding: 10px 30px;
+	color: #fff;
+}
+form .form-group:last-child{
+	padding-bottom: 0;
+}

@@ -1,0 +1,72 @@
+.padding{
+	padding: 10px;
+}
+.border-bottom{
+	border-bottom: 1px solid #DDDDDD;
+}
+.button.border-yellow{
+	color: #f60;
+	border-color: #f60;
+	transition: all 0.5s linear;
+	cursor: pointer;
+}
+.button.border-yellow:hover{
+	background-color: #f60;
+	color: white;
+}
+.table th{
+	text-align: center;
+	vertical-align: bottom;
+	padding: 8px;
+	border-bottom: 2px solid #ddd;
+	box-sizing: border-box;
+	font-weight: bold;	
+}
+tr{
+	display: table-row;
+}
+tr:hover{
+	background-color: #f9f9f9;
+	}
+tbody{
+	font-size: 14px;
+}
+.table{
+	border-collapse:collapse;
+}
+.table td{
+	vertical-align: middle;
+	border-top: 1px solid #ddd;
+	padding: 8px;
+	display: table-cell;
+	text-align: center;
+	font-size: 14px;
+}
+.panel{
+	margin-top: 10px;
+}
+.button-group{
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+.button-group .button{
+	float: left;
+	position: relative;
+	font-weight: normal;
+	margin-left: -1px;
+	transition: all 0.5s linear;
+}
+.button-group .button:hover{
+	background-color: #00AAEE;
+	color: white;
+}
+.button.border-red{
+	color: #e33;
+	border-color: #e33;
+	transition: all 0.5s linear;
+}
+.button.border-red:hover{
+	background-color: #e33;
+	color: white;
+}

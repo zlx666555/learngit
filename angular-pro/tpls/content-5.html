@@ -1,0 +1,46 @@
+<div class="admin">
+	  <div class="panel admin-panel">
+	    <div class="panel-head"><strong class="">留言管理</strong></div>
+	    <div class="padding border-bottom">
+	      <ul class="search">
+	        <li style="list-style: none;">
+	          <button type="button"  class="button border-green" id="checkall"><span class=""></span>全选</button>
+	          <button ng-click="cli1()" class="button border-red"><span class=""></span>{{del}}</button>
+	          
+	          
+	          
+          <input type="text" placeholder="请输入搜索关键字" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block">
+          <a href="javascript:void(0)" class="button border-main icon-search" ng-click="changesearch()"> 搜索</a>
+	          
+	    
+	        </li>
+	      </ul>
+	    </div>
+	    <table class="table table-hover text-center">
+	      <tr>
+	        <th width="120">ID</th>
+	        <th>姓名</th>       
+	        <th>电话</th>
+	        <th>邮箱</th>
+	        <th>其他</th>
+	        <th width="25%">内容</th>
+	         <th width="120">留言时间</th>
+	        <th>操作</th>       
+	      </tr>      
+	        <tr class="txt" ng-repeat="x1 in records1 | filter:searchTxt" ng-hide="myVar1">
+	          <td><input type="checkbox" name="id[]" value="1" />
+	            {{x1.id}}</td>
+	          <td>{{x1.name}}</td>
+	          <td>{{x1.tel}}</td>
+	          <td>{{x1.com}}</td>  
+	          <td>{{x1.add}}</td>         
+	          <td>{{x1.txt}}</td>
+	          <td>{{x1.time}}</td>
+	          <td><div class="button-group"> <a id="removeBtn" class="button border-red btn" href="javascript:void(0)" ng-click="removeLine()"><span class="icon-trash-o"></span> 删除</a> </div></td>
+	        </tr>
+	      <tr>
+	        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+	      </tr>
+	    </table>
+	  </div>
+</div>

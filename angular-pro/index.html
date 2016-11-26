@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>后台管理中心</title>
+		<link rel="stylesheet" type="text/css" href="css/index1.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_hyaggnvgni13v7vi.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/pageCss/content-1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/pageCss/content-4.css"/>
+		<link rel="stylesheet" type="text/css" href="css/pageCss/content-5.css"/>
+		<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body style="background-color: rgb(242,249,253);" ng-app="myApp" ng-controller="myCtrl">
+		<header class="header bg-main">
+		  <div class="logo fadein-top">
+		    <h1>
+		    	<img src="img/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />
+		    	后台管理中心
+		    </h1>
+		  </div>
+		  <div class="head">
+		  	<a class="button button-little bg-green" href="javascript:;" target="_blank">
+		  		<span class="icon-home iconfont icon-shouye"></span>
+		  		前台首页
+		  	</a> &nbsp;&nbsp;<a href="javascript:;" class="button button-little bg-blue">
+		  		<span class="icon-wrench iconfont icon-xiuli"></span>清除缓存</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="tpls/login.html">
+		  		<span class="icon-power-off iconfont icon-guanbi"></span>退出登录</a>
+		  </div>
+		  
+		</header>
+<!--这是语言模块-->
+<ul class="bread">
+	<li>
+		<a href="" class="a_shouye">
+			<span class="iconfont icon-shouye1"></span>
+			首页 /
+			
+		</a>
+	</li>
+	<li>
+		<a href="##" id="a_leader_txt">
+			{{name}}
+			<span>/</span>
+		</a>
+	</li>
+	<li>
+		<b>当前语言：</b>
+		<span style="color:red;">中文</span>&nbsp;切换语言:
+		<a href="##">中文</a>&nbsp;
+		<a href="##">英文</a>
+	</li>
+</ul>
+	<ng-view></ng-view>	
+		<div class="leftnav">
+			<div class="leftnav-title">
+				<strong>
+					<span class="iconfont icon-fenlei-copy"></span>
+					菜单列表
+				</strong>
+			</div>
+			<h2  ng-click="hideContent1()">
+				<span class="iconfont icon-icon10"></span>
+				基本设置
+			</h2>
+			<ul ng-hide="isHide1">
+				<li ng-repeat="setting in settings" ng-click="basicSetting1(setting)">
+					<a href="{{setting.toPath}}" class="{{$index == 0 ? 'on':''}}">
+						<span class="icon-caret-right"></span>
+						<i>{{setting.setting}}</i>
+					</a>
+				</li>
+			</ul>
+			<h2 ng-click="hideContent2()">
+				<span class="iconfont icon-iconfontguanli"></span>
+				栏目管理
+			</h2>
+			<ul ng-show="isHide2">
+				<li ng-repeat="manage in manages" ng-click="basicSetting2(manage)">
+					<a href="{{manage.toPath}}" class="">
+						<span class="icon-caret-right"></span>
+						<i>{{manage.manage}}</i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+	</body>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/myCtrl.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-5.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-6.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-7.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-8.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/pageJs/content-9.js" type="text/javascript" charset="utf-8"></script>
+</html>

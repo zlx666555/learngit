@@ -1,0 +1,16 @@
+{
+	"userInfo":[
+		{
+			"userID":"111",
+			"password":"111"			
+		},
+		{
+			"userID":"222",
+			"password":"222"
+		},
+		{
+			"userID":"333",
+			"password":"333"
+		}
+	]
+}
