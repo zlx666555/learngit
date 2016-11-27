@@ -1,0 +1,188 @@
+h1,h2,h3,h4,h5{
+				padding: 0;
+				margin: 0;
+			}
+			article{
+				width: 960px;
+				height: 573px;
+				margin: 0 auto;
+				background:-webkit-linear-gradient(left,#5621b8,#be23b7);
+				position: relative;
+			}
+			a img:first-child{
+				position: absolute;
+				width: 279px;
+				height: 283px;
+				left: 120px;
+				top: 82px;	
+			}
+			a img:nth-child(2){
+				position: absolute;
+				width: 150px;
+				height: 153px;
+				left: 184px;
+				top: 148px;
+				border-radius: 50%;
+				transform: rotate(0deg);
+			}
+			@keyframes ro{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			.two_img{
+				animation: ro all 2s linear infinite;
+				-webkit-animation: ro 5s linear infinite;
+			}
+			a img:last-child{
+				position: absolute;
+				width: 66px;
+				height: 175px;
+				left: 369px;
+				top: 82px;
+				transform-origin: 80% 10%;
+				transform: rotate(-25deg);
+				transition: all 0.5s linear;
+			}
+			ul{
+				margin: 0;
+				position: absolute;
+				padding: 0;
+				overflow: hidden;
+				top: 438px;
+				left: 198px;
+			}
+			ul li{
+				list-style: none;
+				float: left;
+				height:65px;
+				width: 131px;
+				background:rgba(255,255,255,0.3);
+				margin-right: 16px;
+				border-radius:10px;
+				overflow: hidden;
+				position: relative;
+			}
+			ul li:after{
+				content: "";
+				display: block;
+				position: absolute;
+				height: 38%;
+				width: 131px;
+				background: -webkit-linear-gradient(top,rgba(255,255,255,0.3),rgba(255,255,255,0.1));
+				left: 0;
+				top: 0;
+				border-radius: 10px 10px 0px 0px
+			}
+			ul li h1{
+				color: #FFFFFF;
+				font-size: 21px;
+				margin-top: 13px;
+				text-align: center;
+				overflow: hidden;
+			}
+			ul li h2{
+				color: #FFFFFF;
+				font-size: 16px;
+				margin-top: 7px;
+				text-align: center;
+			}
+			ul li h2 span{
+				font-size:11px;
+			}
+			.player{
+				height: 82px;
+				width: 133px;
+				position: absolute;
+				top: 145px;
+				right: 208px;
+			}
+			.player h3{
+				color: white;
+				text-align: center;
+				font-size: 42px;
+				overflow: hidden;
+			}
+			.player h4{
+				color: white;
+				font-size: 19px;
+				margin-top: 17px;
+			}
+			.player h4 span{
+				font-size: 14px;
+			}
+			.u1{
+				position: absolute;
+				left: -90px;
+				top: 123px;
+				overflow: hidden;
+			}
+			.u2{
+				position: absolute;
+				left: 138px;
+				top: 123px;
+				overflow: hidden;
+				width: 106px;
+			}
+			.u1 a.iconfont{
+				height: 17px;
+				width: 23px;
+				margin-right: 17px;
+				float: left;
+				text-align: center;
+				line-height: 17px;
+				color: white;
+				font-size: 23px;
+				display: inline-block;
+			}
+			.u2 a.iconfont{
+				height: 17px;
+				width: 14px;
+				margin-right: 17px;
+				float: left;
+				display: inline-block;
+				text-align: center;
+				line-height: 17px;
+				font-size: 17px;
+				color: white;
+			}
+			.bofang{
+				position: absolute;
+				top: 150px;
+				left: -90px;
+				width: 400px;
+				overflow: hidden;
+			}
+			.bofang span{
+				color: white;
+				font-size: 11px;
+				float: left;
+				/*margin-right: 9px;*/
+			}
+			.pro{
+				height: 7px;
+				border-radius:10px;
+				width: 246px;
+				background-color: #4f1052;
+				display:block;
+				line-height: 7px;
+				position: absolute;
+				left: 54px;
+				top: 3px;
+			}
+			.pro_pro{
+				background-color: white;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 123px;
+				border-radius: 10px;
+				height: 7px;
+				display: block;
+			}
+			#vol{
+				position: absolute;
+				right: 62px;
+				top: 195px;
+				transform: rotate(-90deg);
+			}
+			
